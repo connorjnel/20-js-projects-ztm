@@ -5,3 +5,4 @@ JavaScript Web Projects: 20 Projects to Build Your Portfolio - ZeroToMastery
 Basic vanilla JS projects
 
 - [Quote Generator](https://connorjnel.github.io/20-js-projects-ztm/quote-generator/)
+- [Infinity Scroll](https://connorjnel.github.io/20-js-projects-ztm/infinity-scroll/)
