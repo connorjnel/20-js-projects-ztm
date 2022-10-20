@@ -5,8 +5,15 @@ let photosArray = [];
 
 // Unsplash API
 const count = 10;
-const apiKey = "XLpn4O1O8gthlT4rTPxTem9Of9ivY0I2YCenZ6UxZ9k";
+const apiKey = "POIzg2QXfNnvtMuGJf9oiuREX7jccYBDuPiK9s5bhrs";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+
+// Helper function to set attributes on DOM elements
+function setAttributes(element, attributes) {
+	for (const key in attributes) {
+		element.setAttribute(key, attributes[key]);
+	}
+}
 
 // Create elements for links and photo, add to DOM
 function displayPhotos() {
@@ -14,19 +21,24 @@ function displayPhotos() {
 	photosArray.forEach((photo) => {
 		// Create <a> to link to unsplash
 		const item = document.createElement("a");
-		item.setAttribute("href", photo.links.html);
-		item.setAttribute("target", "_blank");
+		setAttributes(item, {
+			href: photo.links.html,
+			target: "_blank",
+		});
 
 		//  Create <img> for photo
 		const img = document.createElement("img");
-		img.setAttribute("src", photo.urls.regular);
-		// Check if image has alt, if not use unknown
-		if (photo.description != null) {
-			img.setAttribute("alt", photo.description);
-			img.setAttribute("title", photo.description);
-		} else {
-			img.setAttribute("alt", "Unknown");
-			img.setAttribute("title", "Unknown");
+		setAttributes(img, {
+			src: photo.urls.regular,
+			alt: photo.description,
+			title: photo.description,
+		});
+
+		if (photo.description === null) {
+			setAttributes(img, {
+				alt: "Unknown",
+				title: "Unknown",
+			});
 		}
 
 		// Put <img> inside <a>, then put both inside image container
