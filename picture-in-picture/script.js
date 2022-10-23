@@ -15,11 +15,18 @@ async function selectMediaStream() {
 	}
 }
 
-button.addEventListener("click", () => {
-	button.classList.add("active");
-	button.innerText = "STOP";
-});
+// // Button toggle - Disabled for now
+// function buttonToggle() {
+// 	if (button.disabled) {
+// 		button.innerText = "STOP";
+// 		button.classList.add("active");
+// 	} else {
+// 		button.innerText = "START";
+// 		button.classList.remove("active");
+// 	}
+// }
 
+// Button click listener for PIP
 button.addEventListener("click", async () => {
 	//Disable button
 	button.disabled = true;
