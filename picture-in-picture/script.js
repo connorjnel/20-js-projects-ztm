@@ -15,19 +15,15 @@ async function selectMediaStream() {
 	}
 }
 
-// // Button toggle - Disabled for now
-// function buttonToggle() {
-// 	if (button.disabled) {
-// 		button.innerText = "STOP";
-// 		button.classList.add("active");
-// 	} else {
-// 		button.innerText = "START";
-// 		button.classList.remove("active");
-// 	}
-// }
+// Button toggle
+function buttonToggle() {
+	button.innerText = "ACTIVE";
+	button.classList.add("active");
+}
 
 // Button click listener for PIP
 button.addEventListener("click", async () => {
+	buttonToggle();
 	//Disable button
 	button.disabled = true;
 	// Start picture in picture
