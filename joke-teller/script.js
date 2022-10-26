@@ -2,6 +2,17 @@
 const voiceAPI = "a691cf59f4ee46e0bc64e0c8d648fb52";
 const button = document.getElementById("button");
 const audioElement = document.getElementById("audio");
+const jokeText = document.getElementById("joke-text");
+
+// Create text box with joke text
+function showJoke(joke) {
+	jokeText.hidden = false;
+	jokeText.innerText = joke;
+	// Hide jokeText block after speech is finished
+	audioElement.addEventListener("ended", () => {
+		jokeText.hidden = true;
+	});
+}
 
 // Disable / Enable Button
 function toggleButton() {
@@ -38,6 +49,8 @@ async function getJokes() {
 		tellJoke(joke);
 		// Disable button
 		toggleButton();
+		// Display joke Text
+		showJoke(joke);
 	} catch (error) {
 		// Catch and display error
 		console.log("You messed up: \n", error);
