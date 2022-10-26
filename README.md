@@ -8,3 +8,4 @@ Basic vanilla JS projects
 - [Infinity Scroll](https://connorjnel.github.io/20-js-projects-ztm/infinity-scroll/)
 - [Picture in picture](https://connorjnel.github.io/20-js-projects-ztm/picture-in-picture/)
 - [Joke Teller](https://connorjnel.github.io/20-js-projects-ztm/joke-teller/)
+- [Light & Dark Mode](https://connorjnel.github.io/20-js-projects-ztm/light-dark-mode/)
