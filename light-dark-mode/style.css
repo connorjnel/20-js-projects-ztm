@@ -53,6 +53,7 @@ h2 {
     font-family: Comfortaa, sans-serif;
     font-weight: normal;
     color: var(--on-background-alt);
+    text-align: center;
 }
 
 /* Navigation */
@@ -268,6 +269,7 @@ input:checked+.slider::before {
         justify-content: center;
         align-items: center;
         margin: 0 20px;
+
     }
 
     .text-box {
@@ -283,7 +285,42 @@ input:checked+.slider::before {
         margin: 5px 5px;
     }
 
-    .image-container {
-        margin-right: 10px;
+    nav {
+        position: relative;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
     }
-}
+
+    nav a {
+        margin-right: 5px;
+    }
+
+    .theme-switch-wrapper {
+        position: relative;
+        margin-bottom: 40px;
+        right: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .image-container {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    #home {
+        min-height: 85vh;
+    }
+
+    .buttons {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
