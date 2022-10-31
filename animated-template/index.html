@@ -40,7 +40,7 @@
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">
             <!-- Icon -->
-            <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "></i>
+            <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg"></i>
             <span class="lg:hidden inline-block ml-2">Tweet</span>
           </a>
         </li>
@@ -62,7 +62,7 @@
   <main>
     <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
       <!-- Background Image -->
-      <div class="absolute top-0 w-full h-full bg-center bg-cover"
+      <div class="absolute top-0 w-full h-full bg-center bg-cover "
         style="background: url(https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center">
         <!-- Overlay -->
         <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
@@ -605,24 +605,12 @@
     </div>
   </footer>
   <!-- End of Footer Section -->
+  <!-- Navigation Script -->
+  <script src="./navbar.js"></script>
+  <!-- AOS JS Source-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS JS Init -->
+  <script src="./script.js"></script>
 </body>
-<!-- AOS JS Source-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- AOS JS Init -->
-<script>
-  AOS.init({
-    delay: 200, // values from 0 to 3000, with step 50ms
-    duration: 1500, // values from 0 to 3000, with step 50ms
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-  });
-</script>
-<!-- Navigation Script -->
-<script>
-  function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
 
 </html>
