@@ -10,3 +10,4 @@ Basic vanilla JS projects
 - [Joke Teller](https://connorjnel.github.io/20-js-projects-ztm/joke-teller/)
 - [Light & Dark Mode](https://connorjnel.github.io/20-js-projects-ztm/light-dark-mode/)
 - [Animated Template](https://connorjnel.github.io/20-js-projects-ztm/animated-template/)
+- [Navigation Nation](https://connorjnel.github.io/20-js-projects-ztm/navigation-nation/)
