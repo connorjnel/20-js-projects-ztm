@@ -10,7 +10,7 @@ const navItems = [nav1, nav2, nav3, nav4, nav5];
 // Control Navigation Animation
 function navAnimation(direction1, direction2) {
 	navItems.forEach((nav, idx) => {
-		nav.classList.replace(`slide-${direction1}-${idx}, slide-${direction2}-${idx}`);
+		nav.classList.replace(`slide-${direction1}-${idx + 1}`, `slide-${direction2}-${idx + 1}`);
 	});
 }
 
@@ -35,8 +35,6 @@ function toggleNav() {
 
 // Event listeners
 menuBars.addEventListener("click", toggleNav);
-nav1.addEventListener("click", toggleNav);
-nav2.addEventListener("click", toggleNav);
-nav3.addEventListener("click", toggleNav);
-nav4.addEventListener("click", toggleNav);
-nav5.addEventListener("click", toggleNav);
+navItems.forEach((nav) => {
+	nav.addEventListener("click", toggleNav);
+});
