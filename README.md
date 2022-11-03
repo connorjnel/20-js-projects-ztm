@@ -11,3 +11,4 @@ Basic vanilla JS projects
 - [Light & Dark Mode](https://connorjnel.github.io/20-js-projects-ztm/light-dark-mode/)
 - [Animated Template](https://connorjnel.github.io/20-js-projects-ztm/animated-template/)
 - [Navigation Nation](https://connorjnel.github.io/20-js-projects-ztm/navigation-nation/)
+- [Music Player](https://connorjnel.github.io/20-js-projects-ztm/music-player/)
