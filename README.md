@@ -12,3 +12,4 @@ Basic vanilla JS projects
 - [Animated Template](https://connorjnel.github.io/20-js-projects-ztm/animated-template/)
 - [Navigation Nation](https://connorjnel.github.io/20-js-projects-ztm/navigation-nation/)
 - [Music Player](https://connorjnel.github.io/20-js-projects-ztm/music-player/)
+- [Custom Countdown](https://connorjnel.github.io/20-js-projects-ztm/custom-countdown/)
