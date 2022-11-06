@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -8,18 +10,23 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-
+  font-family: 'Nunity Sans', sans-serif;
 }
 
 /* Video Background */
 .video-background {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+
 }
 
 video {
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 }
 
 .video-overlay {
@@ -35,14 +42,14 @@ video {
 .container {
   min-width: 580px;
   min-height: 304px;
-  color: black;
+  color: #333;
   margin: 0 auto;
   padding: 25px 50px;
   border-radius: 5px;
   z-index: 2;
   display: flex;
   justify-content: center;
-
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .input-container {
@@ -75,7 +82,8 @@ input {
   border-radius: 20px;
   background: #fff;
   outline: none;
-
+  font-family: 'Nunity Sans', sans-serif;
+  color: #333;
 }
 
 /* Button */
@@ -86,13 +94,16 @@ button {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
-  background: #006959;
+  background: steelblue;
   color: white;
   cursor: pointer;
   outline: none;
+  font-family: 'Nunity Sans', sans-serif;
 }
 
-
+button:hover {
+  filter: brightness(115%);
+}
 
 /* Countdown */
 ul {
@@ -134,7 +145,8 @@ li span {
   }
 
   .container {
-
+    min-width: unset;
+    width: 95vw;
     min-height: 245px;
     padding: 20px;
     margin: 10px;
