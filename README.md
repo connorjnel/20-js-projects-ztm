@@ -13,3 +13,4 @@ Basic vanilla JS projects
 - [Navigation Nation](https://connorjnel.github.io/20-js-projects-ztm/navigation-nation/)
 - [Music Player](https://connorjnel.github.io/20-js-projects-ztm/music-player/)
 - [Custom Countdown](https://connorjnel.github.io/20-js-projects-ztm/custom-countdown/)
+- [Bookmark App](https://connorjnel.github.io/20-js-projects-ztm/book-keeper/)
