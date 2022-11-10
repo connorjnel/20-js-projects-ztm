@@ -40,6 +40,7 @@ h1:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item {
@@ -48,7 +49,7 @@ h1:hover {
   border-radius: var(--border-radius);
   padding: 20px;
   margin: 10px;
-  min-width: 200px;
+  min-width: 175px;
 }
 
 .item:hover {
