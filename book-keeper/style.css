@@ -48,6 +48,7 @@ h1:hover {
   border-radius: var(--border-radius);
   padding: 20px;
   margin: 10px;
+  min-width: 200px;
 }
 
 .item:hover {
