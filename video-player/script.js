@@ -11,21 +11,24 @@ const fullscreenBtn = document.querySelector(".fullscreen");
 
 // Play & Pause ----------------------------------- //
 
+function showPlayIcon() {
+	playBtn.classList.replace("fa-pause", "fa-play");
+	playBtn.setAttribute("title", "Play");
+}
+
 function togglePlay() {
 	if (video.paused) {
 		video.play();
-		swapPlayIcon("Play", "Pause");
+		playBtn.classList.replace("fa-play", "fa-pause");
+		playBtn.setAttribute("title", "Pause");
 	} else {
 		video.pause();
-		swapPlayIcon("Pause", "Play");
+		showPlayIcon();
 	}
 }
 
-function swapPlayIcon(state, alt) {
-	// Added to lowercase to preserve capitalization for title
-	playBtn.classList.replace(`fa-${state.toLowerCase()}`, `fa-${alt.toLowerCase()}`);
-	playBtn.setAttribute("title", `${alt}`);
-}
+// On Video end, show play icon
+video.addEventListener("ended", showPlayIcon);
 
 // Progress Bar ---------------------------------- //
 
