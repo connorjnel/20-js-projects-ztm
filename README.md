@@ -16,3 +16,4 @@ Basic vanilla JS projects
 - [Bookmark App](https://connorjnel.github.io/20-js-projects-ztm/book-keeper/)
 - [Video Player](https://connorjnel.github.io/20-js-projects-ztm/video-player/)
 - [Form Validator](https://connorjnel.github.io/20-js-projects-ztm/form-validator/)
+- [Spock Rock Game](https://connorjnel.github.io/20-js-projects-ztm/spock-rock-game/)
