@@ -22,6 +22,15 @@ body {
 
 /* Loader */
 
+.loader {
+  background: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Navigation */
 .navigation-container {
@@ -89,6 +98,10 @@ body {
 
 /* Hidden */
 
+.hidden {
+  display: none;
+}
+
 
 /* Large Smartphone (Vertical) */
 @media screen and (max-width: 800px) {
@@ -103,5 +116,5 @@ body {
     font-size: 20px;
   }
 
-  
+
 }
