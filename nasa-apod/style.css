@@ -60,6 +60,11 @@ body {
   user-select: none;
 }
 
+.clickable:hover {
+  color: rgb(235, 67, 0);
+  transition: 0.4s ease;
+}
+
 
 /* Images Container */
 .images-container {
