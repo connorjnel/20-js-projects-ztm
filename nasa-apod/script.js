@@ -5,11 +5,12 @@ const saveConfirmed = document.querySelector(".save-confirmed");
 const loader = document.querySelector(".loader");
 
 // NASA API
-const count = 5;
+const count = 10;
 const apiKey = "05Y3yviP5QolU5q3aV4J1zvSOxAd2ASBnDN8odhI";
 const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=${count}`;
 
 let resultsArray = [];
+let favorites = {};
 
 // Create and Populate DOM
 function updateDOM() {
@@ -39,6 +40,7 @@ function updateDOM() {
 		const saveText = document.createElement("p");
 		saveText.classList.add("clickable");
 		saveText.textContent = "Add to Favorites";
+		saveText.setAttribute("onclick", `saveFavorite('${result.url}')`);
 		// Card Text
 		const cardText = document.createElement("p");
 		cardText.textContent = result.explanation;
@@ -71,6 +73,17 @@ async function getNasaPictures() {
 		// Catch error here
 		console.log(error);
 	}
+}
+
+// Add results to favorites
+function saveFavorite(itemUrl) {
+	// Loop through results array to select favorite
+	resultsArray.forEach((item) => {
+		if (item.url.includes(itemUrl)) {
+			favorites[itemUrl] = item;
+			console.log(favorites);
+		}
+	});
 }
 
 // On Load
